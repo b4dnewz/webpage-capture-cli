@@ -4,7 +4,7 @@
 
 [![NPM version][npm-image]][npm-url]
 
-This package provide the command line utility for [webpage-capture]() module.
+This package provide the command line utility for [webpage-capture](https://github.com/b4dnewz/webpage-capture) module.
 
 
 ## Installation

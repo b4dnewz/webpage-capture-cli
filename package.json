@@ -1,0 +1,52 @@
+{
+  "name": "webpage-capture-cli",
+  "version": "0.1.0",
+  "description": "Capture the web in many ways from the command line",
+  "homepage": "https://github.com/b4dnewz/webpage-capture-cli",
+  "author": "Filippo Conti <filippo@codekraft.it>",
+  "license": "MIT",
+  "bin": {
+    "webcapture": "src/index.js"
+  },
+  "keywords": [
+    "webpage",
+    "website",
+    "webshot",
+    "capture",
+    "puppeteer",
+    "screenshot"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "lint": "eslint . --fix",
+    "dev": "babel lib --watch --out-dir src",
+    "build": "babel lib --out-dir src"
+  },
+  "repository": "b4dnewz/webpage-capture-cli",
+  "dependencies": {
+    "clito": "^0.1.0",
+    "ora": "^3.1.0",
+    "webpage-capture": "^0.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^5.14.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 9,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2,
+      "no-console": 0
+    }
+  }
+}

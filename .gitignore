@@ -1,0 +1,6 @@
+node_modules
+coverage
+src
+
+# Output folders
+output
